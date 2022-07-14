@@ -1,0 +1,128 @@
+/* 实现单页 */
+html,body{
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+body{
+  background: #fff url(../imgs/bg1.jpg) no-repeat right;
+  background-size: auto 100%;
+}
+.form-section{
+  width: 393px;
+  margin-top: 188px;
+  margin-left: 220px;
+  background-color: #fff;
+}
+.form-section .form-login-type{
+  width: 100%;
+  /* height: xxx; */
+  overflow: hidden;
+}
+.form-section .form-login-type .btn-login-type{
+  float: left;
+  width: 108px;
+  height: 38px;
+  font-size: 20px;
+  color: #333;
+  line-height: 38px;
+  text-align: center;
+}
+.form-section .form-login-type .btn-login-type.scan-type{
+  float: right;
+}
+.form-section .form-login-type .btn-login-type:hover,
+.form-section .form-login-type .btn-login-type.active{
+  color: #333;
+  border-bottom: 4px solid #333;
+  font-weight: bolder;
+}
+.form-section .tip{
+  font-size: 14px;
+  color: #666;
+  margin-top: 68px;
+}
+
+.form-section .country-number{
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid rgba(189,189,189,1);
+  margin-top: 27px;
+}
+.form-section .country-number .country-name{
+  float: left;
+  font-size: 14px;
+  color: #333;
+}
+.form-section .country-number .country-code{
+  float: right;
+  font-size: 14px;
+  color: #333;
+  padding-right: 2em;
+}
+.form-section .input-label{
+  margin-top: 24px;
+  font-size: 14px;
+  color: #333;
+}
+.form-section .input-label .input{
+  width: 100%;
+  height: 44px;
+  border: 1px solid rgba(189,189,189,1);
+  border-radius: 6px;
+  margin-top: 9px;
+  text-indent: 1em;
+}
+
+.form-section .input-btn-code{
+  margin-top: 9px;
+  overflow: hidden;
+}
+.form-section .input-label .input-code{
+  float: left;
+  width: 262px;
+  height: 44px;
+  border: 1px solid rgba(189,189,189,1);
+  border-radius: 6px;
+  text-indent: 1em;
+}
+.form-section .input-label .btn-code{
+  float: right;
+  width: 115px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #333;
+  border-radius: 6px;
+}
+
+.form-section .agree-label{
+  margin-top: 24px;
+  font-size: 14px;
+  color: #333;
+  overflow: hidden
+}
+.form-section .agree-label .checkbox-agree,
+.form-section .agree-label .agree-text{
+  float: left;
+} 
+.form-section .agree-label .checkbox-agree{
+  margin-top: 3px;
+  margin-right: 4px;
+}
+.form-section .agree-label .register-link{
+  float: right;
+}
+.form-section .agree-label2{
+  margin-top: 24px;
+  font-size: 14px;
+  color: #333;
+}
+/* vertical-align 针对行内块和行内元素一块排版的时候,可以作用于到行内块上
+改变其和其他行内元素垂直对齐方式的属性 */
+/* https://developer.mozilla.org/zh-CN/docs/Web/CSS/vertical-align */
+.form-section .agree-label2 .checkbox-agree{
+  vertical-align: -1px;
+}

@@ -1,0 +1,80 @@
+.header{
+  /* position: relative; */
+  width: 100%;
+  height: 106px;
+}
+.header .header-c{
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  /* background-color: green; */
+}
+.header .logo{
+  position: absolute;
+  left: -120px;
+  top: 30px;
+  width: 90px;
+  height: 46px;
+  background: #fff url('../imgs/logo.png') no-repeat center;
+  background-size: 100%;
+}
+.header .nav{
+  float: left;
+  /* width: xxx */
+  height: 100%;
+}
+.header .nav .nav-item{
+  float: left;
+  /* width: xxx */
+  height: 100%;
+  line-height: 106px;
+}
+.header .nav .item-link{
+  display: block;
+  /* 增加点击区域 */
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #666;
+  height: 100%;
+}
+.header .nav .nav-item:hover .item-link{
+  font-weight: 600;
+  color: #333;
+}
+.header .search-input{
+  float: right;
+  margin-right: 240px;
+  width: 338px;
+  height: 46px;
+  border: 1px solid rgba(189,189,189,1);
+  border-radius: 27.5px;
+  margin-top: 33px;
+  text-indent: 1.5em;
+  background: #fff url('../imgs/search.png') no-repeat 300px center;
+  background-size: 21px 21px;
+}
+.header .user-setting{
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* width:xxx */
+  height: 100%;
+}
+.header .user-setting .btn-icon{
+  float: left;
+  width: 21px;
+  height: 21px;
+  margin-top: 47px;
+  background: #fff url('../imgs/like.png') no-repeat center;
+  background-size: 100%;
+}
+.header .user-setting .btn-icon.cart{
+  margin-left: 43px;
+  margin-right: 43px;
+  background-image: url('../imgs/cart.png');
+}
+.header .user-setting .btn-icon.mine{
+  background-image: url('../imgs/mine.png');
+  background-size: 20px 20px;
+}

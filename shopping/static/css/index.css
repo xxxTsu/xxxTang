@@ -1,0 +1,9 @@
+.banner{
+  width: 100%;
+}
+.banner .banner-img{
+  /* 为了避免img留白 */
+  display: block;
+  width: 100%;
+  height: auto;
+}
