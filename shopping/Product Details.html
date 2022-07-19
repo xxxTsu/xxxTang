@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <!-- 单独引入公共头部样式 -->
+    <link rel="stylesheet" href="static/css/common_header.css">
+    <style>
+        .content {
+            /* position: relative; */
+            float: left;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content-c {
+
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .content .sku,
+        .content .img-list,
+        .content .big-img,
+        .content .sku-dec,
+        .content .top-img,
+        .content .top-link,
+        .content .img-li,
+        .content .botm-img,
+        .content .botm-link,
+        .content .sku-dec .sm-title {
+            float: left;
+        }
+
+        .content .sku {
+            width: 1200px;
+            height: 554px;
+            /* background-color: aqua; */
+            margin-top: 80px;
+        }
+
+        .content .img-list {
+            position: relative;
+            width: 92px;
+            height: 554px;
+            /* background-color: azure; */
+            text-align: center;
+        }
+
+        .content .big-img {
+            width: 554px;
+            height: 554px;
+            /* background-color: blueviolet; */
+            margin-left: 23px;
+
+        }
+
+        .content .sku-dec {
+            width: 510px;
+            height: 554px;
+            /* background-color: pink; */
+            margin-left: 21px;
+        }
+
+        .content .top-link,
+        .content .botm-link {
+            display: block;
+            width: 24px;
+            height: 10px;
+            margin-left: 30px;
+            margin-bottom: 15px;
+
+        }
+
+        .content .botm-link {
+            margin: 0;
+            margin-left: 30px;
+        }
+
+        .content .top-img,
+        .content .botm-img {
+            width: 24px;
+            height: 10px;
+        }
+
+        .content .img-li {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 13px;
+        }
+
+        .content .img-link {
+            display: block;
+            width: 90px;
+            height: 90px;
+            /* background-color: brown; */
+            margin-left: 1px;
+        }
+
+        .content .sm-img {
+            width: 90px;
+            height: 90px;
+
+        }
+
+        .content .img-link:hover {
+            border: 1px solid rgba(0, 0, 0, 1);
+            background-color: aquamarine;
+        }
+
+        .content .imgposter {
+            width: 554px;
+            height: 554px;
+        }
+
+        .content .sku-dec .name {
+            float: left;
+            width: 510px;
+            height: 84px;
+            /* background-color: red; */
+        }
+
+        .content .sku-dec .name-link {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            width: 505px;
+
+
+            font-size: 30px;
+            color: #333333;
+            letter-spacing: 0;
+            font-weight: 500;
+        }
+
+        .content .sku-dec .price {
+            float: left;
+            width: 510px;
+            height: 42px;
+            margin-top: 16px;
+            /* background-color: aqua; */
+        }
+
+        .content .sku-dec .price-now {
+
+            line-height: 42px;
+
+            font-size: 30px;
+            color: #CE0404;
+            letter-spacing: 0;
+            font-weight: 500;
+        }
+
+        .content .sku-dec .price-old {
+            float: right;
+
+            line-height: 42px;
+
+            font-size: 16px;
+            color: #666666;
+            letter-spacing: 0;
+            font-weight: 400;
+        }
+
+        .content .sku-dec .sm-title {
+            width: 505px;
+            height: 22px;
+            margin-top: 16px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: #333333;
+            letter-spacing: 0;
+            font-weight: 500;
+        }
+
+        .content .sku-dec .span-right {
+            margin-left: 290px;
+        }
+
+        .content .sku-dec .sku-ul,
+        .content .sku-dec .sku-li,
+        .content .sku-dec .sku-list {
+            float: left;
+        }
+
+        .content .sku-dec .sku-list {
+            width: 505px;
+            height: 42px;
+        }
+
+        .content .sku-dec .color-link {
+            display: block;
+            width: 42px;
+            height: 42px;
+            background: #F6F4EE;
+            border: 1px solid rgba(215, 215, 215, 1);
+            border-radius: 2px;
+        }
+
+        .content .sku-dec .sku-li {
+            margin-right: 1px;
+        }
+
+        .content .sku-dec .sku-li.left {
+            margin-left: 16px;
+        }
+
+        .content .sku-dec .color-link:hover {
+            border: 1px solid rgba(0, 0, 0, 1);
+        }
+
+        .content .sku-dec .sku-li.num {
+            margin-left: 98px;
+        }
+
+        .content .sku-dec .sku-li .setnum {
+            font-size: 30px;
+            color: #333333;
+        }
+
+        .content .sku-dec .input {
+            width: 100px;
+            height: 42px;
+        }
+
+        .content .sku-size {
+            float: left;
+            width: 510px;
+            height: 100px;
+            /* background-color: yellow; */
+            margin-top: 50px;
+            margin-bottom: 16px;
+        }
+
+        .content .sku-size .size-ul,
+        .content .sku-size .size-li {
+            float: left;
+        }
+
+        .content .sku-size .size-link {
+            display: block;
+            width: 106px;
+            height: 38px;
+            border: 1px solid rgba(215, 215, 215, 1);
+            border-radius: 2px;
+            text-align: center;
+            line-height: 38px;
+            color: #333333;
+        }
+
+        .content .sku-size .size-li.left {
+            margin-left: 22px;
+        }
+
+        .content .sku-size .size-li.bot {
+            margin-bottom: 16px;
+        }
+
+        .content .sku-size .size-link:hover {
+            border: 1px solid rgba(0, 0, 0, 1);
+            color: gray;
+        }
+
+        .content .user .way {
+            float: left;
+            width: 510px;
+            height: 22px;
+
+            font-size: 16px;
+            color: #333333;
+            letter-spacing: 0;
+            font-weight: 500;
+        }
+
+        .content .user .share {
+            float: left;
+            width: 510px;
+            height: 22px;
+            margin-top: 16px;
+            font-size: 14px;
+            color: #333333;
+            letter-spacing: 0;
+            font-weight: 500;
+        }
+
+        .content .user .sev {
+            font-size: 13px;
+            color: #666666;
+            letter-spacing: 0;
+            font-weight: 400;
+
+        }
+
+        .content .user .share-link {
+            display: block;
+            float: right;
+            text-align: end;
+            margin-left: 40px;
+            width: 55px;
+            height: 22px;
+            color: #333333;
+            line-height: 22px;
+            background-image: url(img-detail/heart.png);
+            background-repeat: no-repeat;
+            background-size: 16px;
+            background-position: 2px;
+
+        }
+
+        /* .content .user .share-link .share-img{
+            vertical-align: middle;
+            width: 16px;
+            height: 16px;
+        } */
+        .content .user .share-link:hover {
+            font-weight: 600;
+            background-image: url(img-detail/heartactive.png);
+
+        }
+
+        .content .pay,
+        .content .pay-ul,
+        .content .pay-li {
+            float: left;
+        }
+
+        .content .pay-li {
+            margin-top: 28px;
+            width: 226px;
+            height: 60px;
+
+            border-radius: 6px;
+        }
+
+        .content .pay-li.left {
+            margin-left: 58px;
+        }
+
+        .content .pay-link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 60px;
+            color: #333333;
+            background: #fff;
+            border: 1px solid rgba(215, 215, 215, 1);
+            border-radius: 6px;
+        }
+
+        .content .pay-link:hover {
+            color: #fff;
+            background-color: #333333;
+            border: 1px solid rgba(0, 0, 0, 1);
+
+        }
+
+        .content .introduce {
+            position: relative;
+            float: left;
+            width: 1200px;
+            height: 60px;
+            /* background-color: antiquewhite; */
+            margin-top: 60px;
+        }
+
+        .content .introduce .intr-ul,
+        .content .introduce .intr-li,
+        .content .introduce .intr-link {
+            float: left;
+        }
+
+        .content .introduce .intr-link {
+
+            margin-left: 110px;
+            height: 33px;
+            text-align: center;
+            font-size: 24px;
+            color: #333333;
+            letter-spacing: 0;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .content .botm-line {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 56px;
+            width: 320px;
+            height: 4px;
+            background-color: #333333;
+            border-radius: 2px;
+
+        }
+
+        .content .introduce .intr-link:hover {
+            font-weight: 600px;
+            color: #666666;
+        }
+
+        .content .introduce .intr-link:hover .botm-line {
+            display: block;
+        }
+
+        .content .introduce .intr-link.left {
+            margin-left: 350px;
+        }
+
+        .content .botm-line.secd {
+            display: none;
+            position: absolute;
+            left: 450px;
+            top: 56px;
+            width: 320px;
+            height: 4px;
+            background-color: #333333;
+            border-radius: 2px;
+
+        }
+
+        .content .thrd {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 56px;
+            width: 320px;
+            height: 4px;
+            background-color: #333333;
+            border-radius: 2px;
+
+        }
+
+        .content .introduce .intr-link:hover .thrd {
+            display: block;
+        }
+
+        .content .pro-date {
+            position: relative;
+            float: left;
+            width: 1200px;
+            height: 288px;
+            margin-top: 40px;
+            /* background-color: aqua; */
+            border: 1px solid rgba(215, 215, 215, 1);
+            border-radius: 6px;
+        }
+
+        .content .pro-date .datetitle {
+            position: absolute;
+            float: left;
+            left: 84px;
+            top: 35px;
+            font-size: 24px;
+            color: #333333;
+            letter-spacing: 0;
+            font-weight: 500;
+
+        }
+
+        .content .pro-date .list {
+            float: left;
+            position: absolute;
+            left: 84px;
+            top: 76px;
+            width: 1032px;
+            /* background-color: #F6F4EE; */
+        }
+
+        .content .pro-date .list .date-ul,
+        .content .pro-date .list .date-li {
+            float: left;
+        }
+
+        .content .pro-date .list .date-li {
+            width: 516px;
+            margin-top: 22px;
+        }
+
+        .content .bigimg {
+            float: left;
+            width: 1200px;
+            margin-top: 40px;
+
+        }
+
+        .content .bigimg .img-title {
+            float: left;
+            overflow: hidden;
+        }
+
+        .content .bigimg .split,
+        .content .recd .recdsplit {
+            float: left;
+            width: 6px;
+            height: 22px;
+            background-color: #333333;
+            border-radius: 2px;
+        }
+
+
+        .content .bigimg .img-title .picname,
+        .content .recd .recdname {
+            float: left;
+            font-size: 24px;
+            color: #333333;
+            letter-spacing: 0;
+            font-weight: 500;
+            line-height: 22px;
+            text-indent: 1em;
+
+        }
+
+        .content .bigimg .imga,
+        .content .bigimg .imgc {
+            width: 1100px;
+            height: 1100px;
+            margin-top: 20px;
+        }
+
+        .content .bigimg .bigimg-li {
+            margin-top: 40px;
+        }
+
+        .content .bigimg .imgb {
+            width: 1100px;
+            height: 465px;
+            margin-top: 20px;
+        }
+
+        .content .bigimg .bigimg-li.explain {
+            width: 630px;
+            height: 330px;
+            /* background-color: antiquewhite; */
+            margin-top: 30px;
+            /* margin-bottom: 30px; */
+        }
+
+        .content .bigimg .explain-li {
+            font-size: 16px;
+            margin-top: 22px;
+            color: #666666;
+            letter-spacing: 0;
+            font-weight: 400;
+        }
+
+        .content .noticeimg {
+            width: 1100px;
+            height: 800px;
+        }
+
+        .content .recd {
+            margin-top: 30px;
+        }
+
+        .content .recd .recd-ul,
+        .content .recd .recd-li {
+            float: left;
+
+        }
+
+        .content .recd .recd-li {
+            position: relative;
+            width: 345px;
+            height: 470px;
+            margin-bottom: 100px;
+            /* background-color: antiquewhite; */
+        }
+
+        .content .recd .recd-li .recdimg {
+            width: 345px;
+            height: 345px;
+        }
+
+        .content .recd .recd-li .recdheart {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 25px;
+            height: 25px;
+            background-image: url(img-detail/heart.png);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: 2px;
+        }
+
+        .content .recd .recd-li .recdheart.b {
+            position: absolute;
+            right: 50px;
+            bottom: 0;
+        }
+
+        .content .recd .recd-li .recdheart:hover {
+            background-image: url(img-detail/heartactive.png);
+        }
+
+
+        .content .recd .recd-li .recdlink {
+            font-size: 16px;
+            color: #333333;
+            letter-spacing: 0;
+            font-weight: 400;
+        }
+
+        .content .recd .recd-li .price {
+            position: absolute;
+            color: red;
+            left: 0;
+            bottom: 0;
+            font-weight: 600;
+        }
+
+        .content .recd .recd-li.left {
+            margin-left: 80px;
+        }
+
+        .down {
+            float: left;
+            width: 100%;
+            height: 260px;
+            background-color: #f8f8f8;
+        }
+
+        .down .down-c {
+            position: relative;
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .down .logo {
+            float: left;
+            position: absolute;
+            top: 84px;
+            width: 168px;
+            height: 86px;
+            background-color: antiquewhite;
+            background-image: url(img-detail/logo.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .down .down-ul {
+            width: 780px;
+            float: left;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+
+        .down .down-li {
+            float: left;
+            margin-right: 10px;
+            
+        }
+        .down .down-link{
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 25px;
+            font-weight: 500;
+        }
+        .down .down-link:hover{
+            font-weight:600;
+        }
+        .down .down-li.top{
+            margin-top: 20px;
+        }
+
+        .down .scan{
+            float: right;
+            margin-top: 80px;
+            margin-left: 24px;
+            background-color: aliceblue;
+            width: 85px;
+            height: 85px;
+            background-image: url(img-detail/scan1.png);
+            background-position: center;
+            background-size: cover;
+       
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="header-c">
+            <a href="#" class="logo"></a>
+            <!-- 导航部分 -->
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="item-link">
+                        首页
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="item-link">
+                        女装
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="item-link">
+                        男装
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="item-link">
+                        箱包
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="item-link">
+                        配饰
+                    </a>
+                </li>
+            </ul>
+            <!-- 搜索输入框 -->
+            <input type="text" class="search-input">
+            <!-- 用户中心 -->
+            <div class="user-setting">
+                <a href="#" class="btn-icon like"></a>
+                <a href="#" class="btn-icon cart"></a>
+                <a href="#" class="btn-icon mine"></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-c">
+            <div class="sku">
+                <div class="img-list">
+                    <a class="top-link" href="">
+                        <img class="top-img" src="img-detail/up.png" alt="">
+                    </a>
+                    <ul class="img-ul">
+                        <li class="img-li">
+                            <a class="img-link" href="">
+                                <img class="sm-img" src="img-detail/img1.png" alt="">
+                            </a>
+                        </li>
+                        <li class="img-li">
+                            <a class="img-link" href="">
+                                <img class="sm-img" src="img-detail/img1.png" alt="">
+                            </a>
+                        </li>
+                        <li class="img-li">
+                            <a class="img-link" href="">
+                                <img class="sm-img" src="img-detail/img1.png" alt="">
+                            </a>
+                        </li>
+                        <li class="img-li">
+                            <a class="img-link" href="">
+                                <img class="sm-img" src="img-detail/img1.png" alt="">
+                            </a>
+                        </li>
+                        <li class="img-li">
+                            <a class="img-link" href="">
+                                <img class="sm-img" src="img-detail/img1.png" alt="">
+                            </a>
+                        </li>
+
+                    </ul>
+                    <a class="botm-link" href="">
+                        <img class="botm-img" src="img-detail/down.png" alt="">
+                    </a>
+                </div>
+
+                <div class="big-img">
+                    <img class="imgposter" src="img-detail/poster.png" alt="">
+                </div>
+                <div class="sku-dec">
+                    <div class="name">
+                        <a class="name-link" href="">女装外套 牛仔短茄克 春季上新 牛仔外套 水洗产品【100%棉】448126</a>
+                    </div>
+                    <div class="price">
+                        <span class="price-now">￥399.00</span>
+                        <span class="price-old">初上市价格¥499.00</span>
+
+                    </div>
+                    <div class="sm-title">
+                        <span>颜色:</span>
+                        <span class="span-right">数量:</span>
+                    </div>
+                    <div class="sku-list">
+                        <ul class="sku-ul">
+                            <li class="sku-li">
+                                <a class="color-link" href=""></a>
+                            </li>
+                            <li class="sku-li left">
+                                <a class="color-link" href=""></a>
+                            </li>
+                            <li class="sku-li left">
+                                <a class="color-link" href=""></a>
+                            </li>
+                            <li class="sku-li left">
+                                <a class="color-link" href=""></a>
+                            </li>
+                            <li class="sku-li num">
+                                <a class="setnum" href="">+</a>
+
+                                <input class="input" type="text"
+                                    value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1">
+
+                                <a class="setnum" href="">-</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sku-size">
+                        <ul class="size-ul">
+                            <li class="size-li bot">
+                                <a class="size-link" href="">160/84A/M</a>
+                            </li>
+                            <li class="size-li left bot">
+                                <a class="size-link" href="">160/84A/M</a>
+                            </li>
+                            <li class="size-li left bot">
+                                <a class="size-link" href="">160/84A/M</a>
+                            </li>
+                            <li class="size-li left bot">
+                                <a class="size-link" href="">160/84A/M</a>
+                            </li>
+                            <li class="size-li">
+                                <a class="size-link" href="">160/84A/M</a>
+                            </li>
+                            <li class="size-li left">
+                                <a class="size-link" href="">160/84A/M</a>
+                            </li>
+                            <li class="size-li left">
+                                <a class="size-link" href="">160/84A/M</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user">
+                        <div class="way">
+                            <span>配送方式:</span>
+                            <input type="radio" name="sex" checked> 快递配送
+                            <input type="radio" name="sex">门店自提
+                        </div>
+                        <div class="share">
+                            <span class="sev">支持三十天无理由退货</span>
+                            <a class="share-link" href="">
+                                &nbsp收藏
+                            </a>
+                            <a class="share-link" href="">
+                                &nbsp分享
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pay">
+                        <ul class="pay-ul">
+                            <li class="pay-li">
+                                <a class="pay-link" href="">立即购买</a>
+                            </li>
+                            <li class="pay-li left">
+                                <a class="pay-link" href="">加入购物车</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="introduce">
+                <ul class="intr-ul">
+                    <li class="intr-li">
+                        <div class="intr-link">商品详情
+                            <div class="botm-line"></div>
+                        </div>
+                    </li>
+                    <li class="intr-li">
+                        <div class="intr-link left">商品评价
+                            <div class="botm-line secd"></div>
+                        </div>
+                    </li>
+                    <li class="intr-li">
+                        <div class="intr-link left">购买咨询
+                            <div class="thrd"></div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="pro-date">
+                <span class="datetitle">产品参数:</span>
+                <div class="list">
+
+                    <ul class="date-ul">
+                        <li class="date-li">
+                            产品货号：448126000
+                        </li>
+                        <li class="date-li">
+                            商品颜色：00白色 10水粉色 54绿色 67蓝色
+                        </li>
+                        <li class="date-li">
+                            上市季节：2022年春季
+                        </li>
+                        <li class="date-li">
+                            商品材质：[面料]尼龙100%，[亲里]聚酯纤维100%，
+                            [填充物]聚酯纤维100%，[包边]尼龙100%
+                        </li>
+                        <li class="date-li">
+                            商品尺码：150/76A/XS 155/80A/S 160/84A/M
+                            160/88A/L 165/92A/XL 170/100B/XXL
+                            175/108C/3XL
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="bigimg">
+                <ul>
+                    <li>
+                        <div class="img-title">
+                            <div class="split"></div>
+
+                            <span class="picname">产品展示</span>
+                        </div>
+                        <img class="imga" src="img-detail/big1.png" alt="">
+                    </li>
+                    <li class="bigimg-li">
+                        <div class="img-title">
+                            <div class="split"></div>
+
+                            <span class="picname">产品展示</span>
+                        </div>
+                        <img class="imgb" src="img-detail/excel.png" alt="">
+                    </li>
+                    <li class="bigimg-li">
+                        <div class="img-title">
+                            <div class="split"></div>
+
+                            <span class="picname">产品展示</span>
+                        </div>
+                        <img class="imgc" src="img-detail/img2.png" alt="">
+                    </li>
+
+                </ul>
+                <div class="bigimg-li explain">
+                    <div class="img-title">
+                        <div class="split"></div>
+
+                        <span class="picname">商品说明</span><br><br>
+
+                        <ul class="explain-ul">
+                            <li class="explain-li">
+                                【面料组成】棉100%。
+                            </li>
+                            <li class="explain-li">
+                                【洗涤信息】机洗
+                            </li>
+                            <li class="explain-li">
+                                【护理信息】垫布熨烫。
+                                深色衣物请勿与其他衣物一同洗涤。
+                                浅色衣服请勿使用含有荧光增白剂的洗涤剂。
+                                请勿在水中长时间浸泡。
+                                请整形后晾干。
+                                在出汗或被雨淋湿时，会因摩擦而沾色到其他衣物上，敬请注意。
+                                由于面料的特性，本品如长时间处于阳光直射或灯光下，有可能发生变色，请加以注意。
+                            </li>
+                            <li class="explain-li">
+                                【关于退换货】此商品在商品完好，符合相关退换货规则的前提下支持30天无理由退换货
+                            </li>
+
+
+
+
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="notice">
+                <img class="noticeimg" src="img-detail/notice.png" alt="">
+            </div>
+            <div class="recd">
+                <div class="recd-title">
+                    <div class="recdsplit"></div>
+
+                    <span class="recdname">店铺推荐</span><br><br>
+
+                    <ul class="recd-ul">
+                        <li class="recd-li">
+                            <img class="recdimg" src="img-detail/recd-pic.png" alt="">
+                            <a class="recdlink" href="">设计师合作款·千鸟格大衣 冬季上新【羊毛】<br>
+                                【S-XL】</a>
+                            <span class="price">￥799</span>
+                            <a class="recdheart" href="">
+                                <!-- <img class="recdheart" src="img-detail/heart.png" alt=""> -->
+                            </a>
+                            <a class="recdheart b" href="">
+                                <!-- <img class="recdheart b" src="img-detail/heart.png" alt=""> -->
+                            </a>
+                        </li>
+                        <li class="recd-li left">
+                            <img class="recdimg" src="img-detail/recd-pic.png" alt="">
+                            <a class="recdlink" href="">设计师合作款·千鸟格大衣 冬季上新【羊毛】<br>
+                                【S-XL】</a>
+                            <span class="price">￥799</span>
+                            <a class="recdheart" href="">
+                                <!-- <img class="recdheart" src="img-detail/heart.png" alt=""> -->
+                            </a>
+                            <a class="recdheart b" href="">
+                                <!-- <img class="recdheart b" src="img-detail/heart.png" alt=""> -->
+                            </a>
+                        </li>
+                        <li class="recd-li left">
+                            <img class="recdimg" src="img-detail/recd-pic.png" alt="">
+                            <a class="recdlink" href="">设计师合作款·千鸟格大衣 冬季上新【羊毛】<br>
+                                【S-XL】</a>
+                            <span class="price">￥799</span>
+                            <a class="recdheart" href="">
+                                <!-- <img class="recdheart" src="img-detail/heart.png" alt=""> -->
+                            </a>
+                            <a class="recdheart b" href="">
+                                <!-- <img class="recdheart b" src="img-detail/heart.png" alt=""> -->
+                            </a>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="down">
+        <div class="down-c">
+            <div class="logo"></div>
+            <ul class="down-ul">
+                <li class="down-li">
+                    <a class="down-link" href="">门店咨询&nbsp;&nbsp;&nbsp;|&nbsp;</a>
+                </li>
+                <li class="down-li">
+                    <a class="down-link" href="">网络购物Q&A&nbsp;&nbsp;&nbsp;|&nbsp;</a>
+                </li>
+                <li class="down-li">
+                    <a class="down-link" href=""> 关于BALANCE&nbsp;&nbsp;&nbsp;|&nbsp; </a>
+                </li>
+                <li class="down-li">
+                    <a class="down-link" href="">电子报订阅&nbsp;&nbsp;&nbsp;|&nbsp;</a>
+                </li>
+                <li class="down-li">
+                    <a class="down-link" href=""> 买卖定型化契约 &nbsp;&nbsp;&nbsp;|&nbsp;</a>
+                </li>
+                <li class="down-li">
+                    <a class="down-link" href="">门店咨询</a>
+                </li>
+                <li class="down-li top">
+                    <a class="down-link" href=""> Copyright © BALANCE Ltd. All rights reserved</a>
+                </li>
+            </ul>
+            <div class="scan">
+                
+            </div>
+            <div class="scan"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

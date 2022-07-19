@@ -1,0 +1,319 @@
+.header {
+    /* position: relative; */
+    width: 100%;
+    height: 106px;
+}
+
+.header .header-c {
+    position: relative;
+    width: 1201px;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: green; */
+}
+
+.header .logo {
+    position: absolute;
+    left: -120px;
+    top: 30px;
+    width: 90px;
+    height: 46px;
+    background: #fff url('../imgs/logo.png') no-repeat center;
+    background-size: 100%;
+}
+
+.header .nav {
+    float: left;
+    /* width: xxx */
+    height: 100%;
+}
+
+.header .nav .nav-item {
+    float: left;
+    /* width: xxx */
+    height: 100%;
+    line-height: 106px;
+}
+
+.header .nav .item-link {
+    display: block;
+    /* 增加点击区域 */
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #666;
+    height: 100%;
+}
+
+.header .nav .nav-item:hover .item-link {
+    font-weight: 600;
+    color: #333;
+}
+
+.header .search-input {
+    float: right;
+    display: block;
+    margin-right: 62px;
+    width: 182px;
+    height: 48px;
+    border: 1px solid rgba(189, 189, 189, 1);
+    border-radius: 27.5px;
+    margin-top: 33px;
+    text-align: center;
+    color: #333;
+}
+
+.header .search-input .search-input-s {
+    display: block;
+    width: 80px;
+    height: 22px;
+    float: left;
+    margin-left: 34px;
+    margin-top: 13px;
+}
+
+.header .search-input .search-input-t {
+    display: block;
+    /* width: 12px; */
+    height: 20px;
+    float: right;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #CE0404;
+    border-radius: 20px;
+    margin-top: 14px;
+    margin-right: 38px;
+}
+
+.header-c .search-input-png {
+    width: 22px;
+    height: 21px;
+    background-image: url(../imgs/设置.png);
+    background-size: 22px 21px;
+    position: absolute;
+    right: 0;
+    top: 46px;
+}
+
+.dingdan-c {
+    width: 1201px;
+    margin: 0 auto;
+}
+
+.dingdan-c .dingdan-c-title {
+    width: 100%;
+    height: 48px;
+    /* background-color: red; */
+    margin-top: 83px;
+}
+
+.dingdan-c .dingdan-c-title .dingdan-wenzi {
+    width: 120px;
+    height: 42px;
+    font-size: 30px;
+    color: #333333;
+    /* margin-top: 83px; */
+    float: left;
+}
+
+.dingdan-c .dingdan-c-title .dingdan-sousuo {
+    width: 392px;
+    height: 48px;
+    border: 1px solid rgba(189, 189, 189, 1);
+    border-radius: 27.5px;
+    float: right;
+    /* margin-top: 83px; */
+    background: #fff url(../imgs/search.png) no-repeat 350px center;
+    background-size: 21px;
+    text-indent: 1.5em;
+
+}
+
+.dingdan-neirong {
+    width: 1201px;
+    height: 288px;
+    background: #FFFFFF;
+    border: 1px solid rgba(215, 215, 215, 1);
+    border-radius: 6px;
+    margin-top: 30px;
+    /* overflow: hidden; */
+}
+
+.dingdan-c .dingdan-neirong .dingdan-neirong-tubiao {
+    width: 108px;
+    float: left;
+    /* margin-left: 174px; */
+    /* text-align: center; */
+}
+
+.dingdan-neirong .tubiao-fukuan {
+    margin-left: 40px;
+}
+
+.dingdan-neirong .dingdan-neirong-tubiao .tubiao-quanbu {
+    width: 54px;
+    height: 49px;
+    margin: 103px 193px 0 49px;
+}
+
+.dingdan-neirong .dingdan-neirong-tubiao .tubiao-wenzi {
+    display: block;
+    width: 100%;
+    height: 33px;
+    font-size: 24px;
+    color: #333333;
+    font-weight: 400;
+    margin-top: 13px;
+    margin-left: 40px;
+    /* text-align: center; */
+}
+
+.dingdan-neirong .tubiao-shouhuo {
+    margin-left: 130px;
+}
+
+.dingdan-neirong .tubiao-pingjia {
+    margin-left: 130px;
+}
+
+.dingdan-neirong .tubiao-shouhou {
+    margin-left: 130px;
+}
+
+.dingdan-neirong .tubiao-dingdan {
+    margin-left: 130px;
+}
+
+.dingdan-c .shoucang {
+    width: 100%;
+    height: 360px;
+    margin-top: 60px;
+}
+
+.dingdan-c .shoucang .shoucang-left {
+    width: 560px;
+    height: 100%;
+    float: left;
+}
+
+.shoucang .shoucang-left .shoucang-biaoti {
+    width: 120px;
+    height: 42px;
+    font-size: 30px;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+.shoucang .shoucang-left .shoucang-neirong {
+    width: 560px;
+    height: 288px;
+    background: #FFFFFF;
+    border: 1px solid rgba(215, 215, 215, 1);
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.shoucang-left .shoucang-neirong .shoucang-wenzi-shang {
+    width: 100%;
+    height: 50px;
+    /* float: left; */
+    margin-top: 94px;
+    /* margin-left: 101px; */
+    /* background-color: red; */
+    /* text-align: center; */
+    /* line-height: 97px; */
+}
+
+.shoucang-neirong .shoucang-wenzi-shang .wenzi13 {
+    width: 37px;
+    height: 50px;
+    font-size: 36px;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+.shoucang-neirong .shoucang-wenzi-shang .wenzi-zuo13 {
+    margin-left: 131px;
+}
+
+.shoucang-neirong .shoucang-wenzi-shang .wenzi-you13 {
+    margin-left: 238px;
+}
+
+.shoucang .shoucang-left .shoucang-neirong .shoucang-wenzi-xia {
+    width: 100%;
+    height: 33px;
+    /* float: right; */
+    margin-top: 14px;
+    /* margin-right: 87px; */
+    /* background-color: red; */
+    font-size: 24px;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.shoucang-neirong .shoucang-wenzi-xia .xia-zuo{
+    margin-left: 101px;
+}
+.shoucang-neirong .shoucang-wenzi-xia .xia-you {
+    margin-left: 180px;
+}
+.dingdan-c .shoucang .shoucang-right {
+    width: 560px;
+    height: 100%;
+    float: right;
+}
+.shoucang .shoucang-right .shoucang-biaoti {
+    width: 120px;
+    height: 42px;
+    font-size: 30px;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+.shoucang .shoucang-right .shoucang-neirong {
+    width: 560px;
+    height: 288px;
+    background: #FFFFFF;
+    border: 1px solid rgba(215, 215, 215, 1);
+    border-radius: 6px;
+    margin-top: 30px;
+}
+.shoucang .shoucang-right .shoucang-neirong .shoucang-wenzi-xia {
+    width: 100%;
+    height: 33px;
+    /* float: right; */
+    margin-top: 14px;
+    /* margin-right: 87px; */
+    /* background-color: red; */
+    font-size: 24px;
+    color: #333333;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.shoucang-right .shoucang-neirong .shoucang-wenzi-shang {
+    width: 100%;
+    height: 50px;
+    /* float: left; */
+    margin-top: 94px;
+    /* margin-left: 101px; */
+    /* background-color: red; */
+    /* text-align: center; */
+    /* line-height: 97px; */
+}
+ .shoucang-right .shoucang-neirong .shoucang-wenzi-shang .wenzi-zuo13 {
+    margin-left: 106px;
+}
+
+.shoucang-right .shoucang-neirong .shoucang-wenzi-shang .wenzi-you13 {
+    margin-left: 187px;
+}
+.shoucang-right .shoucang-neirong .shoucang-wenzi-xia .xia-zuo {
+    margin-left: 99px;
+}
+
+.shoucang-right .shoucang-neirong .shoucang-wenzi-xia .xia-you {
+    margin-left: 212px;
+}

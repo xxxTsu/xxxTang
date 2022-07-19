@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .title {
+            width: 100%;
+            height: 106px;
+            box-shadow: 0 0 5px 0 rgb(48, 55, 66);
+            transform: translate(0, -10px);
+        }
+
+        .cart {
+            width: 100%;
+            height: 1200px;
+        }
+
+        .title .title-c.w,
+        .cart .cart-c.w {
+            width: 1200px;
+            height: 100%;
+            /* background-color: aqua; */
+            margin: 0 auto;
+        }
+
+
+        .title .title-c {
+            position: relative;
+
+        }
+
+        .title .logo {
+            position: absolute;
+            left: -228px;
+            top: 30px;
+            width: 90px;
+            height: 46px;
+            background-color: #fff;
+            background-image: url(../ah-yes-yes-yes/static/imgs/logo.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .title .title-ul,
+        .title .title-li {
+            float: left;
+        }
+
+        .title .li-link {
+            display: inline-block;
+            height: 100%;
+            line-height: 106px;
+            font-size: 18px;
+            color: #333;
+            margin-right: 60px;
+
+        }
+
+        .title .li-link:hover {
+            font-weight: 600;
+
+        }
+
+        .title .endset {
+
+            height: 100%;
+            width: 22px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-image: url(../ah-yes-yes-yes/static/imgs/set.png);
+            background-size: 22px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .title .endset:hover {
+            background-image: url(../ah-yes-yes-yes/static/imgs/set-active.png);
+        }
+
+        .title .sec-cart {
+            position: absolute;
+            right: 62px;
+            top: 27px;
+            width: 182px;
+            height: 48px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            border-radius: 27.5px;
+            text-indent: 1em;
+
+        }
+
+        .title .sec-cart:hover {
+            border: 2px solid rgba(black, black, black, 1);
+        }
+
+        .title .cart-num {
+            position: absolute;
+            right: 135px;
+            top: 43px;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            background-color: #fff;
+            letter-spacing: 0;
+            font-weight: 400;
+            border-radius: 10px;
+        }
+
+        .title .cart-num-link {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .title .cart-num-link:hover {
+            background-color: red;
+        }
+
+        .cart .cart-top,
+        .cart .cart-bottom {
+            position: relative;
+            width: 1202px;
+            height: 70px;
+            margin-top: 30px;
+            background-color: #f8f8f8;
+        }
+
+        .cart .cart-bottom {
+            margin-top: 52px;
+
+        }
+
+        .cart .cart-ul,
+        .cart .cart-li,
+        .cart .bottom-ul,
+        .cart .bottom-li {
+            float: left;
+
+            font-size: 16px;
+            color: #333333;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        .cart .cart-li.a {
+            margin-left: 80px;
+        }
+
+        .cart .cart-li.b {
+            margin-left: 364px;
+        }
+
+        .cart .cart-li.c {
+            margin-left: 104px;
+        }
+
+        .cart .cart-li.d {
+            margin-left: 98px;
+        }
+
+        .cart .cart-li.e {
+            margin-left: 121px;
+        }
+
+        .cart .cart-li.f {
+            margin-left: 105px;
+        }
+
+        .cart .all {
+            display: block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            border-radius: 2px;
+            position: absolute;
+            left: 32px;
+            top: 26px;
+        }
+
+        .cart .cart-mid {
+            position: relative;
+            width: 1200px;
+            height: 190px;
+            background-image: url(static/imgs/cartimg.png);
+            background-repeat: no-repeat;
+            background-size: 124px;
+            background-position: 95px 30px;
+            /* background-color: antiquewhite; */
+            border-bottom: 2px solid rgba(240, 240, 240, 1);
+
+        }
+
+        .cart .mid-ul {
+            float: left;
+            width: 100%;
+            height: 160px;
+        }
+
+        .cart .mid-li {
+            float: left;
+            margin-top: 30px;
+        }
+
+        .cart .mid-li.name {
+            width: 222px;
+            height: 100%;
+            margin-left: 225px;
+        }
+
+        .cart .mid-li.sku {
+            width: 131px;
+            height: 100%;
+            margin-left: 64px;
+
+
+        }
+
+        .cart .mid-li .proname {
+            font-size: 16px;
+            color: #333333;
+            letter-spacing: 0;
+            font-weight: 600;
+        }
+
+        .cart .mid-li .noresion {
+
+            display: block;
+            margin-top: 60px;
+            font-size: 16px;
+            color: #999999;
+            letter-spacing: 0;
+            font-weight: 400
+        }
+
+        .cart .mid-li.p1 {
+            margin-left: 44px;
+
+            font-size: 16px;
+            color: #CE0404;
+            letter-spacing: 0;
+            font-weight: 500;
+        }
+
+        .cart .mid-li.p2 {
+            margin-left: 56px;
+
+            font-size: 16px;
+            color: #CE0404;
+            letter-spacing: 0;
+            font-weight: 500;
+        }
+
+        .cart .mid-li.num {
+            margin-top: 20px;
+            margin-left: 62px;
+        }
+
+        .cart .mid-li.num .setnum {
+            font-size: 30px;
+        }
+
+        .cart .mid-li.num .input {
+            width: 58.29px;
+            height: 32px;
+            border: 1px solid rgba(215, 215, 215, 1);
+            border-radius: 2px;
+
+        }
+
+        .cart .mid-li.cartset {
+            float: right;
+        }
+
+        .cart .mid-li .collect {
+            color: #333;
+            display: inline-block;
+            text-align: center;
+            width: 89px;
+            height: 34px;
+            line-height: 34px;
+            border: 2px solid rgba(3, 3, 3, 1);
+            border-radius: 2px;
+        }
+
+        .cart .mid-li .delete {
+            color: #333;
+            display: inline-block;
+            text-align: center;
+            width: 89px;
+            height: 34px;
+            line-height: 34px;
+            margin-top: 54px;
+            border: 2px solid rgba(3, 3, 3, 1);
+            border-radius: 2px;
+        }
+
+        .cart .mid-li .collect:hover {
+            color: #fff;
+            background-color: #CE0404;
+        }
+
+        .cart .mid-li .delete:hover {
+            color: #fff;
+            background-color: #CE0404;
+        }
+
+
+        .cart .bottom-li.a {
+            margin-left: 89px;
+        }
+
+        .cart .bottom-li.b {
+            margin-left: 395px;
+        }
+
+        .cart .bottom-li.c {
+            font-size: 16px;
+            color: #CE0404;
+            letter-spacing: 0;
+            line-height: 22px;
+            font-weight: 500;
+        }
+
+        .cart .bottom-li.e {
+            width: 154px;
+            height: 42px;
+            margin-top: 0;
+            margin-left: 90px;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        .cart .btn-li-link {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            line-height: 28px;
+            text-align: center;
+            padding-top: 8px;
+            color: #333;
+            background-color: #f8f8f8;
+            border-radius: 4px;
+        }
+
+        /* .cart .bottom-li.e:hover {
+            background-color: #CE0404;
+
+        } */
+
+        .cart .btn-li-link:hover {
+            color: #fff;
+            background-color: #CE0404;
+        }
+
+        .cart .cart-mid .checkbox {
+            position: absolute;
+            left: 20px;
+            top: 80px;
+            display: inline-block;
+            overflow: hidden;
+            /* background-color: antiquewhite; */
+            width: 40px;
+            height: 30px;
+
+        }
+
+        .cart .cart-mid .checkbox::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .cart .cart-mid .checkbox .inpblock {
+            position: relative;
+            width: 18px;
+            height: 18px;
+
+        }
+
+        .cart .cart-mid .checkbox .inpblock input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            opacity: 0;
+        }
+
+        .cart .cart-mid .checkbox .inpblock .check-img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url('static/imgs/icon-radio.png') no-repeat center;
+            background-size: 100%;
+        }
+
+        .cart .cart-mid .checkbox .inpblock input:checked+.check-img {
+            background-image: url('static/imgs/icon-radio-active.png');
+        }
+    </style>
+</head>
+<div class="title">
+    <div class="title-c w">
+        <a class="logo" href=""></a>
+        <ul class="title-ul">
+            <li class="title-li">
+                <a class="li-link" href="">首页</a>
+            </li>
+            <li class="title-li">
+                <a class="li-link" href="">女装</a>
+            </li>
+            <li class="title-li">
+                <a class="li-link" href="">男装</a>
+            </li>
+            <li class="title-li">
+                <a class="li-link" href="">箱包</a>
+            </li>
+            <li class="title-li">
+                <a class="li-link" href="">配饰</a>
+            </li>
+        </ul>
+        <input class="sec-cart" type="seccart" placeholder="我的购物车">
+        <a class="endset" href=""></a>
+        <div class="cart-num">
+            <a class="cart-num-link" href="">11</a>
+        </div>
+    </div>
+</div>
+<div class="cart">
+    <div class="cart-c w">
+        <div class="cart-top">
+            <a class="all" href=""></a>
+            <ul class="cart-ul">
+                <li class="cart-li a">
+                    商品信息
+                </li>
+                <li class="cart-li b">
+                    尺码/颜色
+                </li>
+                <li class="cart-li c">
+                    价格
+                </li>
+                <li class="cart-li d">
+                    数量
+                </li>
+                <li class="cart-li e">
+                    小计
+                </li>
+                <li class="cart-li f">
+                    操作
+                </li>
+            </ul>
+        </div>
+        <div class="cart-mid">
+            <label class="checkbox">
+                <div class="inpblock">
+                    <input type="radio" name="sendType" value="0">
+                    <span class="check-img"></span>
+                </div>
+            </label>
+            <ul class="mid-ul">
+                <li class="mid-li name">
+                    <a class="proname" href="">【设计师合作款】女装 +J 双面呢大衣(外套) 446355</a>
+                    <p class="noresion">支持三十天无理由退货</p>
+                </li>
+                <li class="mid-li sku">
+                    <p class="choicesku">尺码：155/80A/S<br>颜色：69 藏青色</p>
+                </li>
+                <li class="mid-li p1">
+                    <p class="price">￥3999</p>
+                </li>
+                <li class="mid-li num">
+                    <a class="setnum" href="">+</a>
+
+                    <input class="input" type="text" value=" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1">
+
+                    <a class="setnum" href="">-</a>
+                </li>
+                <li class="mid-li p2">
+                    <p class="price">￥3999</p>
+                </li>
+                <li class="mid-li cartset">
+                    <a class="collect" href="">移入收藏夹</a><br>
+                    <a class="delete" href="">删除</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="cart-mid">
+            <label class="checkbox">
+                <div class="inpblock">
+                    <input type="radio" name="sendType" value="0">
+                    <span class="check-img"></span>
+                </div>
+            </label>
+            <ul class="mid-ul">
+                <li class="mid-li name">
+                    <a class="proname" href="">【设计师合作款】女装 +J 双面呢大衣(外套) 446355</a>
+                    <p class="noresion">支持三十天无理由退货</p>
+                </li>
+                <li class="mid-li sku">
+                    <p class="choicesku">尺码：155/80A/S<br>颜色：69 藏青色</p>
+                </li>
+                <li class="mid-li p1">
+                    <p class="price">￥3999</p>
+                </li>
+                <li class="mid-li num">
+                    <a class="setnum" href="">+</a>
+
+                    <input class="input" type="text" value=" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1">
+
+                    <a class="setnum" href="">-</a>
+                </li>
+                <li class="mid-li p2">
+                    <p class="price">￥3999</p>
+                </li>
+                <li class="mid-li cartset">
+                    <a class="collect" href="">移入收藏夹</a><br>
+                    <a class="delete" href="">删除</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="cart-mid">
+            <label class="checkbox">
+                <div class="inpblock">
+                    <input type="radio" name="sendType" value="0">
+                    <span class="check-img"></span>
+                </div>
+            </label>
+            <ul class="mid-ul">
+                <li class="mid-li name">
+                    <a class="proname" href="">【设计师合作款】女装 +J 双面呢大衣(外套) 446355</a>
+                    <p class="noresion">支持三十天无理由退货</p>
+                </li>
+                <li class="mid-li sku">
+                    <p class="choicesku">尺码：155/80A/S<br>颜色：69 藏青色</p>
+                </li>
+                <li class="mid-li p1">
+                    <p class="price">￥3999</p>
+                </li>
+                <li class="mid-li num">
+                    <a class="setnum" href="">+</a>
+
+                    <input class="input" type="text" value=" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1">
+
+                    <a class="setnum" href="">-</a>
+                </li>
+                <li class="mid-li p2">
+                    <p class="price">￥3999</p>
+                </li>
+                <li class="mid-li cartset">
+                    <a class="collect" href="">移入收藏夹</a><br>
+                    <a class="delete" href="">删除</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="cart-mid">
+            <label class="checkbox">
+                <div class="inpblock">
+                    <input type="radio" name="sendType" value="0">
+                    <span class="check-img"></span>
+                </div>
+            </label>
+            <ul class="mid-ul">
+                <li class="mid-li name">
+                    <a class="proname" href="">【设计师合作款】女装 +J 双面呢大衣(外套) 446355</a>
+                    <p class="noresion">支持三十天无理由退货</p>
+                </li>
+                <li class="mid-li sku">
+                    <p class="choicesku">尺码：155/80A/S<br>颜色：69 藏青色</p>
+                </li>
+                <li class="mid-li p1">
+                    <p class="price">￥3999</p>
+                </li>
+                <li class="mid-li num">
+                    <a class="setnum" href="">+</a>
+
+                    <input class="input" type="text" value=" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1">
+
+                    <a class="setnum" href="">-</a>
+                </li>
+                <li class="mid-li p2">
+                    <p class="price">￥3999</p>
+                </li>
+                <li class="mid-li cartset">
+                    <a class="collect" href="">移入收藏夹</a><br>
+                    <a class="delete" href="">删除</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+
+        <div class="cart-bottom">
+            <ul class="bottom-ul">
+                <li class="bottom-li a">全选</li>
+                <li class="bottom-li a">删除</li>
+                <li class="bottom-li a">移入收藏夹</li>
+                <li class="bottom-li b">总价&nbsp;:</li>
+                <li class="bottom-li c">&nbsp;&nbsp;￥9999</li>
+                <li class="bottom-li e">
+                    <a class="btn-li-link" href="">立即结算</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<body>
+
+</body>
+
+</html>
